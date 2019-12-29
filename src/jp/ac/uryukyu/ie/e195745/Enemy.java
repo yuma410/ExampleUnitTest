@@ -46,7 +46,9 @@ public class Enemy {
      * @param hero 攻撃対象
      */
     public void attack(Hero hero){
-        int damage = (int)(Math.random() * attack);
+        //int damage = (int)(Math.random() * attack);
+    	if(dead) return;
+    	int damage = (int)(Math.random()*attack);
         System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, hero.getName(), damage);
         hero.wounded(damage);
     }

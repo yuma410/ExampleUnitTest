@@ -64,4 +64,9 @@ public class Enemy {
         }
     }
 
+	public void setDead(boolean b) {
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
+
 }
